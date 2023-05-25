@@ -93,7 +93,7 @@ body {
   }
   
   .immagine {
-      margin-top: 150px;
+      margin-top: 50px;
       height: 200px;
       background-color: rgb(54, 101, 204);
       
@@ -147,11 +147,83 @@ body {
               padding: 10px;
           }
           
-          .submenu li {
+          .submenu li:hover {
               margin: 5px 0;
+              color: aqua;
+              text-decoration: underline;
           }
           
           .menu li:hover .submenu {
               display: block;
           }
+
+          .container {
+			display: flex;
+			align-items: center;
+			margin: 20px;
+		}
+		
+		.image {
+			flex: 1;
+			margin-right: 20px;
+		}
+		
+		.text {
+			flex: 1;
+		}
+		
+		
+		.text p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 5px;
+            font-family: italic;
+		}
   
+
+    .footer {
+      background-color: transparent;
+      text-align: center;
+      padding: 10px;
+      height: 150px;
+
+    }
+    
+    .footer img {
+      max-width: 100%;
+      height: 100px;
+      margin-right: 9000px;
+      display: inline-block;
+  width: 200px; /* Imposta la larghezza desiderata per le immagini */
+  margin-right: 10px; /* Aggiunge uno spazio tra le immagini */
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    .image-text {
+      text-align: center;
+    }
+    
+    .image-text p {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .language-select {
+      left: 640px;
+      float: right;
+      position: relative;
+    }
+    
+    #language-button {
+      cursor: pointer;
+    }
+    
+    .language-select .submenu {
+      right: 0;
+      left: auto;
+    }
