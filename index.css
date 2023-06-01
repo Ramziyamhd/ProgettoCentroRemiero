@@ -9,17 +9,51 @@ body {
     width: 100%;
     height: 100%;
   }
-  #slideshow .img2 {
-    position: 0;
-    top: 0;
-    left: 0;
+ 
+
+  .carousel {
+    width: 100%;
+    height: 950px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
     width: 100%;
     height: 100%;
-    opacity: 0.5;
-    z-index: 1;
-  
-  
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    animation: carouselAnimation 10s infinite;
   }
+  
+  .carousel-item:nth-child(1) {
+    background-image: url("https://static.wixstatic.com/media/76bff0_93055e40dfb041b6b6c5cffdc7b4cce9~mv2.jpg/v1/fill/w_672,h_234,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/76bff0_93055e40dfb041b6b6c5cffdc7b4cce9~mv2.jpg");
+  }
+  
+  .carousel-item:nth-child(2) {
+    background-image: url("https://static.wixstatic.com/media/76bff0_6c6df45f0c5e4121b54abf0cd1397f6d~mv2.jpg/v1/fill/w_672,h_234,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/76bff0_6c6df45f0c5e4121b54abf0cd1397f6d~mv2.jpg");
+  }
+  
+  .carousel-item:nth-child(3) {
+    background-image: url('image3.jpg');
+  }
+  
+  @keyframes carouselAnimation {
+    0% {
+      opacity: 0;
+    }
+    33.33% {
+      opacity: 1;
+    }
+    66.66% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
   
   
   #slideshow .overlay {
