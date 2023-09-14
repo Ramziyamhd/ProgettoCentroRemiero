@@ -22,4 +22,21 @@ card.appendChild(caption);
 
 cardContainer.appendChild(card);
 
+
+function initMap() {
+  var myLatLng = {lat: -34.397, lng: 150.644}; // Imposta le coordinate della tua posizione
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      zoom: 8 // Imposta il livello di zoom desiderato
+  });
+
+  var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: 'La mia posizione' // Testo del tooltip del marker
+  });
+}
+
+
  

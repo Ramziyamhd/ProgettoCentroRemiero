@@ -290,14 +290,15 @@ body {
     
     .polaroid-card {
       position: relative;
-      width: 200px;
-      height: 300px;
+      width: 400px;
+      height: 570px;
       background-color: white;
       border: 1px solid #ccc;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
       padding: 10px;
       margin: 20px;
       overflow: hidden;
+
     }
     
     .polaroid-card img {
@@ -309,4 +310,13 @@ body {
       text-align: center;
       margin-top: 10px;
     }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+  }
     
+  #map {
+    height: 400px; /* Imposta l'altezza desiderata per la mappa */
+    width: 100%; /* Fai in modo che la larghezza occupi tutta la larghezza disponibile */
+}
